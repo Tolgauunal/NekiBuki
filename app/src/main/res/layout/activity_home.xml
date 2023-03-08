@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_activity_cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MenuActivity.Home">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_color="#ff826c"
+        app:civ_border_width="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        android:textColor="#FF826C"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImage" />
+
+    <ImageView
+        android:id="@+id/playHeart_design"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/imageheartdesingg"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/home_activity_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/playHeart_design"
+        app:layout_constraintLeft_toLeftOf="@+id/playHeart_design"
+        app:layout_constraintRight_toRightOf="@+id/playHeart_design"
+        app:layout_constraintTop_toTopOf="@+id/playHeart_design">
+
+        <TextView
+            android:id="@+id/home_activity_canSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+0"
+            android:textColor="#a1eaf0"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/home_activity_Heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/heart"></ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reklamGetirBtn"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/reklamimg"
+        app:layout_constraintBottom_toBottomOf="@+id/playHeart_design"
+        app:layout_constraintEnd_toStartOf="@+id/home_activity_linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/playHeart_design"></ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reklamGetirBtn"
+        app:layout_constraintLeft_toLeftOf="@+id/reklamGetirBtn"
+        app:layout_constraintRight_toRightOf="@+id/reklamGetirBtn"
+        app:layout_constraintTop_toTopOf="@+id/reklamGetirBtn">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="#a1eaf0"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/leaderBoardClick"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/leaderboardbtnbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playHeart_design"></Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaderBoardClick"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_play_bg"
+            android:onClick="mainBtnClick"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+        <Button
+            android:id="@+id/nasiloynanir"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_nasiloynanir_bg"
+            android:onClick="mainBtnClick"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_ayarlar_bg"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="274dp" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/main_activity_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="FULL_BANNER"
+        app:adUnitId="ca-app-pub-2727876875460311/1074770411"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

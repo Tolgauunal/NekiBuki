@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginNicknameSplashScreen.SplashScreenActivity"
+    android:background="@drawable/splashscreen">
+
+    <ImageView
+        android:id="@+id/activity_splashScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/splash_screen_processBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:theme="@style/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:min="0"
+        android:max="100"
+        android:layout_marginBottom="200dp"></ProgressBar>
+
+    <TextView
+        android:id="@+id/splash_screen_textViewState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sorular Yükleniyor"
+        android:textAlignment="center"
+        android:textColor="#FF826C"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_processBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_processBar"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_processBar"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

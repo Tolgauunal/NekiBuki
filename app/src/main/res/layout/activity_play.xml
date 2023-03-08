@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playCons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MenuActivity.PlayActivity">
+
+    <ImageView
+        android:id="@+id/play_activity_puan"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/imageheartdesingg"
+        app:layout_constraintBottom_toBottomOf="@+id/play_activity_statisticImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_activity_statisticImage"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/play_activity_puansayisiLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/play_activity_puan"
+        app:layout_constraintLeft_toLeftOf="@+id/play_activity_puan"
+        app:layout_constraintRight_toRightOf="@+id/play_activity_puan"
+        app:layout_constraintTop_toTopOf="@+id/play_activity_puan">
+
+        <TextView
+            android:id="@+id/play_activity_puanSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="#a1eaf0"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_activity_statisticImage"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playHeart_design"
+        app:layout_constraintEnd_toStartOf="@+id/play_activityReklamGetir"
+        app:layout_constraintStart_toEndOf="@+id/play_activity_puan"
+        app:layout_constraintTop_toTopOf="@+id/playHeart_design"
+        app:srcCompat="@drawable/statisticimage"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/playHeart_design"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/imageheartdesingg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/play_activity_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/playHeart_design"
+        app:layout_constraintLeft_toLeftOf="@+id/playHeart_design"
+        app:layout_constraintRight_toRightOf="@+id/playHeart_design"
+        app:layout_constraintTop_toTopOf="@+id/playHeart_design">
+
+        <TextView
+            android:id="@+id/play_activity_canSayısı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+0"
+            android:textColor="#a1eaf0"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/heart"></ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_activityReklamGetir"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/reklamimg"
+        app:layout_constraintBottom_toBottomOf="@+id/playHeart_design"
+        app:layout_constraintEnd_toStartOf="@+id/play_activity_linear"
+        app:layout_constraintTop_toTopOf="@+id/playHeart_design"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/play_activityReklamGetir"
+        app:layout_constraintLeft_toLeftOf="@+id/play_activityReklamGetir"
+        app:layout_constraintRight_toRightOf="@+id/play_activityReklamGetir"
+        app:layout_constraintTop_toTopOf="@+id/play_activityReklamGetir">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="#a1eaf0"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/play_activity_cardViewQuestion"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="44dp"
+        app:cardBackgroundColor="#FF826C"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="35dp"
+        app:contentPadding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_activity_statisticImage">
+
+
+        <LinearLayout
+            android:id="@+id/linearDeneme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/play_activity_refreshKelime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_refresh">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/play_activity_rndmKelime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:letterSpacing="0.1"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/play_activity_textViewQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/play_activity_textViewQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="_ _ _ _ _ _"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/play_activity_cardViewQuestion"></TextView>
+
+    <EditText
+        android:id="@+id/play_activity_editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Tahmini Değerinizi Giriniz"
+        android:inputType="textCapWords"
+        android:textAlignment="center"
+        android:textColorHint="@color/White_transparent_white_hex_11"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_activity_textViewQuest"></EditText>
+
+    <LinearLayout
+        android:id="@+id/btn_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_activity_editText">
+
+        <Button
+            android:id="@+id/harfAl"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_letter_bg"
+            android:onClick="btn_harfAl"></Button>
+
+        <Button
+            android:id="@+id/tahmin_et"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_guess_bg"
+            android:onClick="btn_tahminEt"></Button>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/play_activity_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-2727876875460311/7138789343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

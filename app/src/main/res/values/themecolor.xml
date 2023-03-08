@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="progressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">#FF826C</item>
+    </style>
+</resources>
